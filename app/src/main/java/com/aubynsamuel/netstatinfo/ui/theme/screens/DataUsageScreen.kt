@@ -1,8 +1,10 @@
 package com.aubynsamuel.netstatinfo.ui.theme.screens
 
 import android.content.Intent
+import android.os.Build
 import android.provider.Settings
 import android.util.Log
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -41,6 +43,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
+@RequiresApi(Build.VERSION_CODES.O)
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DataUsageScreen() {
@@ -111,7 +114,11 @@ fun DataUsageScreen() {
             }
         )
     } else {
-        Column(modifier = Modifier.padding(vertical = 30.dp, horizontal = 10.dp).fillMaxSize()) {
+        Column(
+            modifier = Modifier
+                .padding(vertical = 30.dp, horizontal = 10.dp)
+                .fillMaxSize()
+        ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
                     "Data Usage",
