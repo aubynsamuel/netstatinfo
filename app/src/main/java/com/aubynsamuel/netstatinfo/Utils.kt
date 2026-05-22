@@ -11,7 +11,6 @@ import android.os.Build
 import android.os.Process
 import android.util.Log
 import java.util.Locale
-import kotlin.use
 
 fun hasUsageStatsPermission(context: Context): Boolean {
     val appOpsManager = context.getSystemService(Context.APP_OPS_SERVICE) as AppOpsManager?
