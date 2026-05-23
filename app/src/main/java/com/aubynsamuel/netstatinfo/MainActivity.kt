@@ -4,12 +4,12 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Scaffold
+import androidx.compose.ui.Modifier
+import com.aubynsamuel.netstatinfo.ui.screens.DataUsageScreen
 import com.aubynsamuel.netstatinfo.ui.theme.NetStatInfoTheme
-import com.aubynsamuel.netstatinfo.ui.theme.screens.DataUsageScreen
-
-internal const val TAG = "NetStatInfo"
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,8 +17,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             NetStatInfoTheme {
-                Surface(color = MaterialTheme.colorScheme.background) {
-                    DataUsageScreen()
+                Scaffold { paddingValues ->
+                    Box(modifier = Modifier.padding(paddingValues)) {
+                        DataUsageScreen()
+                    }
                 }
             }
         }

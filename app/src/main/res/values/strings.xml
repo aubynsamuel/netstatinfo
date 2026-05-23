@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">NetStatInfo</string>
+    <string name="permission_required_title">Permission Required</string>
+    <string name="permission_required_body">NetStatInfo needs Usage Access to display per-app network statistics. Your data never leaves your device.</string>
+    <string name="permission_grant_button">Grant Usage Access</string>
+    <string name="permission_settings_error">Could not open settings. Please go to Android Settings &gt; Apps &gt; Special app access &gt; Usage access.</string>
+    <string name="screen_title">Data Usage</string>
+    <string name="refresh_content_description">Refresh</string>
+    <string name="no_data_title">No data usage found</string>
+    <string name="no_data_body">Try selecting a wider time range or wait for apps to use data.</string>
+    <string name="error_title">Something went wrong</string>
+    <string name="summary_card_title">Total Network Usage</string>
+    <string name="label_mobile">Mobile</string>
+    <string name="label_wifi">WiFi</string>
+    <string name="label_total">total</string>
+    <string name="label_apps_count">%d apps</string>
 </resources>
