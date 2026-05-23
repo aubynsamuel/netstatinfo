@@ -2,6 +2,12 @@
 
 NetStatInfo is an Android app for viewing per-app network usage on your device.
 
+## Quick Test
+
+Download the latest APK from
+the [latest release](https://github.com/aubynsamuel/NetStatInfo/releases/latest) to try the app
+quickly without building from source.
+
 ## Features
 
 - Shows mobile, Wi-Fi, and total data usage by app.
